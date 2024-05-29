@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+textarea, input, select {
+  padding: 10px;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#pickLists {
+  margin-top: 20px;
+}
+
+.pickList {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.pickList h3 {
+  margin: 0 0 10px 0;
+}
+
+.pickList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pickList li {
+  padding: 5px 0;
+}
