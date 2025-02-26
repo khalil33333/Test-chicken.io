@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boka Tjänster -Elvis Bilservice</title>
+<meta name="discription" content="boka tid för service eller restaurering av din klassisk bil">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <header>
+        <!--Logo-->
+        <h1 class="logo">Elvis Bilservice</h1>
+        <!--menyn-->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html"> Hem</a></li>
+            <li><a href="galleri.html">Galleri</a></li>
+            <li><a href="boka-service.html">Boka Tjänster</a></li>
+            <li><a href="kontakt.html">Kontakta Oss</a></li>
+            <li><a href="om-oss.html">Om Oss</a></li>
+        </ul>
+    </nav>
+    
+    </header>
+<main>
+    <h2>Boka Tjänster</h2>
+    <p>
+        Här kan du boka både service och restaurering av äldre bilar. Välj vilken typ 
+        av tjänst du behöver, fyll i dina uppgifter och beskriv vad du vill ha hjälp med. 
+        Vi återkommer snarast med bekräftelse och tid.
+    </p>
+
+
+    <!--formulär för att boka tjänst-->
+    <form class="boka">
+
+        <!--namn-fält-->
+        <div class="form-group">
+            <label for="namn">Ditt namn:</label>
+            <input type="text" id="namn" name="namn" required>
+        </div>
+
+
+        <!--email-fält-->
+        <div class="form-group">
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- tel-fält-->
+        <div class="form-group">
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <!--options-fält-->
+        <div class="form-group">
+            <label for="Service-type">Typ av tjänst:</label>
+            <select id="service-type" name="service-type" required>
+
+                <option value="">välja tjänst</option>
+                <option value="service">Service</option>
+                <option value="Restaurering">Restaurering</option>
+        </select>
+        </div>
+        
+
+        <!--bilmodell text-fält-->
+        <div class="form-group">
+            <label for="bilmodell">Bilmodell:</label>
+            <input type="text" id="bilmodell" name="bilmodell" required>
+        </div>
+
+        <!--text area för tjänst beskrivning-->
+        <div class="form-group">
+            <label for="message">Beskriv vad du behöver hjälp med:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+
+        <!--skicka in förfrågan knapp-->
+        <button type="submit" class="submit-btn">Skicka förfrågan</button>
+
+    </form>
+</main>
+
+
+<footer>
+    <p>&copy; 2025 Elvis Bilservice, Kalmar</p>
+</footer>
+
+
+</body>
+
+</html>
